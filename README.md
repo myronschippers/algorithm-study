@@ -39,3 +39,9 @@ Algorithms are used in the sequencing of DNA
 **Efficiency**
 
 - measured in time and space
+- time complexity (how long it takes to run)
+- space complexity (amount of memory taken up on the computer)
+- how well it does in best case
+- how well it does in average case
+- how well it does in worst case
+- using worst case is good for measurement because it will never be worst than that
