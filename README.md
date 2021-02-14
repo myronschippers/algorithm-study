@@ -45,3 +45,16 @@ Algorithms are used in the sequencing of DNA
 - how well it does in average case
 - how well it does in worst case
 - using worst case is good for measurement because it will never be worst than that
+
+**Binary Search**
+
+- List must be sorted
+- split and reduce
+- split and reduce
+- input: a sorted list of values
+- output: the position of the matched item
+- step1: determine the middle position of a sorted list
+- step2: compare element in middle position to the target element
+- step3: if the elements match return the position of the matched item and end
+- step4: if they don't match check if item is smaller than target if it is return the position of the item if not return to step 2 with a new list that has the paired down list of valid sorted items
+- step5: if the item is less than the target element then take the lower half of the list and pass it back returning to step 2
