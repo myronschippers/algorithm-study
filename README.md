@@ -120,3 +120,59 @@ Growth rate of the algorithm is referred to as the **Order of Growth**. This bri
 **Linear Search**
 
 - `O(n)` most commonly referred to as **Linear Time**
+- reading every item in a list means linear run time
+- quadratic
+
+**Sorting Algorithms???**
+
+- have verying difficulties
+
+**Big O of n squared**
+
+- `O(n^2)`
+- `n = 4`
+- 4 x 4 Grid
+- `n^2 = 16`
+- Quadratic Runtime
+- Cubic Runtime - `n^3`
+- can be referred to as expensive computationally
+
+**Quasilinear Runtime**
+
+- `O(n log n)`
+- visual graphed, upward curve above linear runtime
+- graphed it falls between Linear Runtime and Quadratic Runtime (on the upper bounds)
+- see an example of this when dealing with sorting algorithms
+
+_example:_
+Merge Sort
+
+`O(n log n)`
+
+1. start with
+   - `[8, 4, 5, 1, 3, 2, 6, 7]`
+1. split the list into 2 lists down the middle
+   - `[8, 4, 5, 1]` `[3, 2, 6, 7]`
+1. take each sublist and split in half
+   - `[8, 4]` `[5, 1]` `[3, 2]` `[6, 7]`
+1. take each sublist and split in half again until left with each list having only a single number
+   - `[8]` `[4]` `[5]` `[1]` `[3]` `[2]` `[6]` `[7]`
+   - **Merge Operations**, `n = 0`
+
+- need to carry out comparison operations (n number of comparisons on the single item arrays)
+
+**Quadratic Runtime**
+
+- `O(n^2)`
+- visual graphed, mirror over linear of Binary Runtime (`O(log n)`)
+
+**Polynomial Runtime**
+
+- An algorithm is considered to be a Polynomial Runtime if `O(n^k)` (`k` power meaning some value...???)
+- `k` = 2, for a **Quadratic Runtime**
+- `k` = 3, for a **Cubic Runtime**
+- anything that falls under the `O(n^k)` graph is considered a **Polynomial Runtime**
+
+### Exponential Runtimes
+
+- `O(x^n)`
