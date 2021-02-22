@@ -176,3 +176,24 @@ Merge Sort
 ### Exponential Runtimes
 
 - `O(x^n)`
+
+**Example:**
+
+- 2 sets of 10 possible digits on a lock could be noted as `10^2`
+- trying every combination on the lock until it opens is referred to as **Brute Force**
+- **Brute Force** algorithms have exponential run times
+- for the lock we have 2 digits so we can say `n = 2` and say that the possibilities ar `10^n` with `n` representing the number of dials
+- the reason this is so inefficient is because with just one more dial added to the lock `n` is now 3 and the number of possibilities goes up significantly (number of combinations in the worst case scenario increase dramatically)
+
+**The Traveling Salesman (Exponential Algorithms)**
+
+- given a list of cities and the distance between each pair of cities, what is the shortest route that visits each city and then returns to the origin city
+- with cities A, B, & C we have to find all the possible combinations for the city routes
+- factorial represented by `n!`
+- `3!` is `3 x 2 x 1 = 6`
+- `4!` is `4 x 3 x 2 x 1 = 24`
+- Factorial / Combinatorial Runtime
+- `O(n!)`
+
+### How do we determine what the worst case complexity of an Algorithm is?
+
