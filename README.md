@@ -197,3 +197,11 @@ Merge Sort
 
 ### How do we determine what the worst case complexity of an Algorithm is?
 
+## Space Complexity
+
+The amount of space that is taken up as the application goes on. Space complexity is also measured in the worst case scenario. What additional storage is needed as the algorithm runs.
+
+If the storage is never bigger than `n` then it is considered **constant**.
+
+Recursion depth matters for memory used.
+
