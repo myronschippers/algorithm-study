@@ -205,3 +205,15 @@ If the storage is never bigger than `n` then it is considered **constant**.
 
 Recursion depth matters for memory used.
 
+## Docker Environment
+
+Leveraging a [getting started guide](https://docs.docker.com/compose/gettingstarted/) from Docker to test out the Docker setup for Python. The environment is using Python, Flask, and Redis.
+
+### Building and Running the App
+
+1. run `docker-compose up` from the project root in the terminal
+1. open the browser and navigate to [http://localhost:5000/](http://localhost:5000/) where the application running.
+    - if this doesn't work then try navigating to [http://127.0.0.1:5000](http://127.0.0.1:5000)
+1. refreshing the page should increment the number displayed on the page up by 1
+1. run `docker image ls` to list local images
+
