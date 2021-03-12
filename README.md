@@ -197,6 +197,35 @@ Merge Sort
 
 ### How do we determine what the worst case complexity of an Algorithm is?
 
+### Introduction to Data Structures
+
+Lists vs Arrays
+
+Arrays store data contiguously (meaning right next to each other in memory with nothing between them).
+
+#### Arrays
+
+- Blocks of memory allocated for an array are of equal size
+- Fast at accessing values but bad at searching for values
+
+**Inserts:**
+
+Linear Runtime
+
+When inserting an item into an array it displace the current item at that position in memory and then pushes displaced item/value into the next position and displaces that value/item until it reaches the end of the list. Because this iterates through every item in the list that is how we know it is a linear runtime.
+
+**Appending:**
+
+Constant Runtime
+
+Although technically it is still inserting the item allocates space equivalent to `n + 1`.The list/array doesn't use memory allocation of its size. Even if you have an empty array/list such as `numbers = []` the memory allocated for the array is 1 element. Even though an empty list `numbers = []` allocates one element worth of space the length of the list, `len(numbers)`, will still come out to be `0`.
+
+**Deletes:**
+
+Linear Runtime
+
+shifts every item in the list just like the Insert operation
+
 ## Space Complexity
 
 The amount of space that is taken up as the application goes on. Space complexity is also measured in the worst case scenario. What additional storage is needed as the algorithm runs.
@@ -216,4 +245,3 @@ Leveraging a [getting started guide](https://docs.docker.com/compose/gettingstar
     - if this doesn't work then try navigating to [http://127.0.0.1:5000](http://127.0.0.1:5000)
 1. refreshing the page should increment the number displayed on the page up by 1
 1. run `docker image ls` to list local images
-
